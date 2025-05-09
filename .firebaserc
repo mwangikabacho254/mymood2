@@ -1,7 +1,10 @@
 {
   "projects": {
-    "default": "mymood-41ef4"
+    "default": "your-firebase-project-id"
   },
   "targets": {},
-  "etags": {}
+  "github": {
+    "repo": "mwangikabacho254/mymood2",
+    "branch": "main"
+  }
 }
