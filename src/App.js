@@ -120,15 +120,7 @@ const CalmAnimation = () => (
 
 async function logMoodSelection(selectedMood) {
   try {
-    const position = await new Promise((resolve, reject) => {
-      navigator.geolocation.getCurrentPosition(resolve, reject, {
-        enableHighAccuracy: true,
-        timeout: 10000,
-        maximumAge: 0
-      });
-    });
-
-    const { latitude, longitude } = position.coords;
+ 
 
     await addDoc(collection(db, "moodSelections"), {
       mood: selectedMood,
